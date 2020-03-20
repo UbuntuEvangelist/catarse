@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 
-gem 'rails', '~> 4.1.6'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
 
-gem 'protected_attributes'
-gem 'rails-observers'
+gem 'protected_attributes', '>= 1.1.3'
+gem 'rails-observers', '>= 0.1.2'
 gem 'rb-readline'
 
 gem 'sidekiq',  '~> 4.0.1'
@@ -19,14 +19,14 @@ gem 'statesman'
 
 # Database and data related
 gem 'pg', '0.17.1'
-gem 'dbhero', '>= 1.1.8'
-gem 'postgres-copy'
-gem 'pg_search'
-gem 'i18n_alchemy'
+gem 'dbhero', '>= 1.1.9'
+gem 'postgres-copy', '>= 1.0.0'
+gem 'pg_search', '>= 1.0.5'
+gem 'i18n_alchemy', '>= 0.2.2'
 gem "i18n-js", ">= 3.0.0.rc11"
 
-gem 'schema_plus'
-gem 'catarse_settings_db', '>= 0.1.0'
+gem 'schema_plus', '>= 2.0.0'
+gem 'catarse_settings_db', '>= 0.1.1'
 
 # Notifications
 gem 'user_notifier', '~> 0.3.1'
@@ -40,10 +40,10 @@ gem 'catarse_pagarme', '~> 2.8.8'
 #gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
-gem 'draper'
+gem 'draper', '>= 2.1.0'
 
 # Frontend stuff
-gem 'slim-rails'
+gem 'slim-rails', '>= 3.1.0'
 gem 'browser'
 gem "cocoon"
 
@@ -51,23 +51,23 @@ gem "cocoon"
 gem 'high_voltage'
 
 # Authentication and Authorization
-gem 'simple_token_authentication', '~> 1.0' # see semver.org
+gem 'simple_token_authentication', '~> 1.14', '>= 1.14.0' # see semver.org
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'koala'
-gem 'devise'
-gem 'pundit'
-gem 'json_web_token'
+gem 'devise', '>= 4.4.2'
+gem 'pundit', '>= 1.0.1'
+gem 'json_web_token', '>= 0.3.2'
 
 # Email marketing
 gem 'catarse_monkeymail', '>= 0.1.6'
-gem 'gridhook'
+gem 'gridhook', '>= 0.2.0'
 
 # HTML manipulation and formatting
-gem 'simple_form'
-gem 'mail_form'
+gem 'simple_form', '>= 4.0.0'
+gem 'mail_form', '>= 1.7.1'
 gem "auto_html"
-gem 'kaminari'
+gem 'kaminari', '>= 0.16.3'
 gem 'redactor-rails', github: 'catarse/redactor-rails'
 
 # Uploads
@@ -76,17 +76,17 @@ gem "mini_magick"
 
 # Other Tools
 gem 'to_xls'
-gem 'ranked-model'
+gem 'ranked-model', '>= 0.4.0'
 gem 'feedjira'
-gem 'inherited_resources'
-gem 'has_scope', '>= 0.6.0.rc'
-gem 'spectator-validates_email',  require: 'validates_email'
+gem 'inherited_resources', '>= 1.9.0'
+gem 'has_scope', '>= 0.7.2'
+gem 'spectator-validates_email', '0.2.0'
 gem 'video_info', '~> 2.4.2'
 gem 'typhoeus'
 
 # Translations
 gem 'http_accept_language'
-gem 'routing-filter', '~> 0.4.0.pre'
+gem 'routing-filter', '~> 0.6.2.0'
 
 group :production do
   # Gem used to handle image uploading
@@ -114,7 +114,7 @@ group :production do
 end
 group :development do
   gem 'rack-mini-profiler'
-  gem "rails-erd"
+  gem "rails-erd", ">= 1.4.4"
   gem "letter_opener"
   gem 'foreman'
   gem 'better_errors'
@@ -126,12 +126,12 @@ group :development do
 end
 
 group :test, :development do
-  gem 'rspec-rails', '~> 3.1'
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.0'
   gem 'rspec-mocks'
   gem 'rspec-its'
   gem 'rspec-collection_matchers'
   gem 'pry'
-  gem 'jasmine-rails'
+  gem 'jasmine-rails', '>= 0.12.2'
 end
 
 group :test do
@@ -140,14 +140,14 @@ group :test do
   gem 'poltergeist'
   gem 'launchy'
   gem 'database_cleaner'
-  gem 'shoulda'
-  gem 'factory_girl_rails'
+  gem 'shoulda', '>= 3.5.0'
+  gem 'factory_girl_rails', '>= 4.5.0'
   gem 'capybara',   '~> 2.2.0'
   gem 'selenium-webdriver'
 end
 
-gem 'sass-rails'
-gem 'coffee-rails'
-gem 'compass-rails'
-gem 'uglifier'
+gem 'sass-rails', '>= 5.0.5'
+gem 'coffee-rails', '>= 4.2.2'
+gem 'compass-rails', '>= 2.0.5'
+gem 'uglifier', '>= 2.7.2'
 gem 'sprockets'
