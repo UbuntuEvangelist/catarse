@@ -67,7 +67,7 @@ gem 'gridhook'
 gem 'simple_form'
 gem 'mail_form'
 gem "auto_html"
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.1'
 gem 'redactor-rails', github: 'catarse/redactor-rails'
 
 # Uploads
