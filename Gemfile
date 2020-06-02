@@ -137,7 +137,7 @@ end
 group :test do
   gem 'zonebie'
   gem 'fakeweb'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.8.1'
   gem 'launchy'
   gem 'database_cleaner'
   gem 'shoulda'
