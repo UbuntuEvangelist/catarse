@@ -19,7 +19,7 @@ gem 'statesman'
 
 # Database and data related
 gem 'pg', '0.17.1'
-gem 'dbhero', '>= 1.1.8'
+gem 'dbhero', '>= 1.1.9'
 gem 'postgres-copy'
 gem 'pg_search'
 gem 'i18n_alchemy'
@@ -77,7 +77,7 @@ gem "mini_magick"
 # Other Tools
 gem 'to_xls'
 gem 'ranked-model'
-gem 'feedjira'
+gem 'feedjira', '>= 2.0.0'
 gem 'inherited_resources'
 gem 'has_scope', '>= 0.6.0.rc'
 gem 'spectator-validates_email',  require: 'validates_email'
@@ -90,7 +90,7 @@ gem 'routing-filter', '~> 0.4.0.pre'
 
 group :production do
   # Gem used to handle image uploading
-  gem 'fog-aws'
+  gem 'fog-aws', '>= 0.7.6'
 
   # Workers, forks and all that jazz
   gem 'unicorn'
@@ -137,12 +137,12 @@ end
 group :test do
   gem 'zonebie'
   gem 'fakeweb'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.8.1'
   gem 'launchy'
   gem 'database_cleaner'
   gem 'shoulda'
   gem 'factory_girl_rails'
-  gem 'capybara',   '~> 2.2.0'
+  gem 'capybara', '~> 2.2.1'
   gem 'selenium-webdriver'
 end
 
