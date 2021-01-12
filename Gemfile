@@ -52,8 +52,8 @@ gem 'high_voltage'
 
 # Authentication and Authorization
 gem 'simple_token_authentication', '~> 1.0' # see semver.org
-gem 'omniauth'
-gem 'omniauth-facebook'
+gem 'omniauth', '>= 2.0.0'
+gem 'omniauth-facebook', '>= 3.0.0'
 gem 'koala'
 gem 'devise'
 gem 'pundit'
@@ -66,7 +66,7 @@ gem 'gridhook'
 # HTML manipulation and formatting
 gem 'simple_form'
 gem 'mail_form'
-gem "auto_html"
+gem "auto_html", ">= 1.6.4"
 gem 'kaminari'
 gem 'redactor-rails', github: 'catarse/redactor-rails'
 
