@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 
-gem 'rails', '~> 4.1.6'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 
 gem 'protected_attributes'
 gem 'rails-observers'
@@ -19,14 +19,14 @@ gem 'statesman'
 
 # Database and data related
 gem 'pg', '0.17.1'
-gem 'dbhero', '>= 1.1.8'
-gem 'postgres-copy'
+gem 'dbhero', '>= 1.1.9'
+gem 'postgres-copy', '>= 1.0.0'
 gem 'pg_search'
 gem 'i18n_alchemy'
 gem "i18n-js", ">= 3.0.0.rc11"
 
 gem 'schema_plus'
-gem 'catarse_settings_db', '>= 0.1.0'
+gem 'catarse_settings_db', '>= 0.1.1'
 
 # Notifications
 gem 'user_notifier', '~> 0.3.1'
@@ -36,7 +36,7 @@ gem 'mixpanel-ruby'
 gem 'mixpanel_client'
 
 # Payment engines
-gem 'catarse_pagarme', '~> 2.8.8'
+gem 'catarse_pagarme', '~> 3.0.0'
 #gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
@@ -61,7 +61,7 @@ gem 'json_web_token'
 
 # Email marketing
 gem 'catarse_monkeymail', '>= 0.1.6'
-gem 'gridhook'
+gem 'gridhook', '>= 0.2.0'
 
 # HTML manipulation and formatting
 gem 'simple_form'
