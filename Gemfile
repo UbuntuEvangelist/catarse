@@ -143,7 +143,7 @@ group :test do
   gem 'shoulda'
   gem 'factory_girl_rails'
   gem 'capybara',   '~> 2.2.0'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '>= 2.48.1'
 end
 
 gem 'sass-rails'
