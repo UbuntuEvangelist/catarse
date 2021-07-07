@@ -19,7 +19,7 @@ gem 'statesman'
 
 # Database and data related
 gem 'pg', '0.17.1'
-gem 'dbhero', '>= 1.1.8'
+gem 'dbhero', '>= 1.1.9'
 gem 'postgres-copy'
 gem 'pg_search'
 gem 'i18n_alchemy'
@@ -54,7 +54,7 @@ gem 'high_voltage'
 gem 'simple_token_authentication', '~> 1.0' # see semver.org
 gem 'omniauth'
 gem 'omniauth-facebook'
-gem 'koala'
+gem 'koala', '>= 2.2.0'
 gem 'devise'
 gem 'pundit'
 gem 'json_web_token'
@@ -115,7 +115,7 @@ end
 group :development do
   gem 'rack-mini-profiler'
   gem "rails-erd"
-  gem "letter_opener"
+  gem "letter_opener", ">= 1.4.1"
   gem 'foreman'
   gem 'better_errors'
   gem 'binding_of_caller'
@@ -138,7 +138,7 @@ group :test do
   gem 'zonebie'
   gem 'fakeweb'
   gem 'poltergeist'
-  gem 'launchy'
+  gem 'launchy', '>= 2.4.3'
   gem 'database_cleaner'
   gem 'shoulda'
   gem 'factory_girl_rails'
